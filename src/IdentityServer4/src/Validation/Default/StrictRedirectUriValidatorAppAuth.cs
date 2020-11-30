@@ -1,4 +1,4 @@
-﻿// Copyright (c) Brock Allen & Dominick Baier. All rights reserved.
+// Copyright (c) Brock Allen & Dominick Baier. All rights reserved.
 // Licensed under the Apache License, Version 2.0. See LICENSE in the project root for license information.
 
 
@@ -99,7 +99,7 @@ namespace IdentityServer4.Validation
 
             string portAsString;
             int indexOfPathSeparator = parts[2].IndexOfAny(new[] { '/', '?', '#' });
-            if (indexOfPathSeparator > 0)
+            if (indexOfPathSeparator > -1)
             {
                 portAsString = parts[2].Substring(0, indexOfPathSeparator);
             }
